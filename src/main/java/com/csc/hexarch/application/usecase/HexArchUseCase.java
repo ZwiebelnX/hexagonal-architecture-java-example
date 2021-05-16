@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class HexArchUseCase {
 
-    private final HexArchRepository hexArchJpaRepository;
+    private final HexArchRepository hexArchRepository;
 
     private final HexArchService hexArchService;
 
     public String helloHexArch() {
-        return hexArchJpaRepository.getHello();
+        return hexArchRepository.getHello();
     }
 
     public void saveValue(String value) {
